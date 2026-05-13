@@ -22,7 +22,7 @@
         <a href="blog.html" class="active">Blog</a>
         <a href="index.html#purpose">Sobre</a>
       </nav>
-      <a href="index.html#products" class="btn btn-primary header__cta">Lorem Ipsum</a>
+      <a href="index.html#products" class="btn btn-primary header__cta">Ver Produtos</a>
       <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Menu">
         <span></span>
         <span></span>
@@ -37,7 +37,7 @@
     <a href="index.html#products">Produtos</a>
     <a href="blog.html" class="active">Blog</a>
     <a href="index.html#purpose">Sobre</a>
-    <a href="index.html#products" class="btn btn-primary">Lorem Ipsum</a>
+    <a href="index.html#products" class="btn btn-primary">Ver Produtos</a>
   </nav>
 
   <section class="post-header-section">
@@ -62,7 +62,10 @@
 
   <section style="padding: 0 0 60px;">
     <div class="content-width">
-      <div class="image-placeholder" style="aspect-ratio: 21/9;">IMAGEM</div>
+      <div class="image-placeholder" style="aspect-ratio: 21/9;">
+        <span class="image-placeholder__title">Imagem Principal do Artigo</span>
+        <span>Imagem de destaque</span>
+      </div>
     </div>
   </section>
 
@@ -81,7 +84,10 @@
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-      <div class="image-placeholder" style="aspect-ratio: 16/9;">IMAGEM</div>
+      <div class="image-placeholder" style="aspect-ratio: 16/9;">
+        <span class="image-placeholder__title">Imagem do Conteudo</span>
+        <span>Imagem contextual</span>
+      </div>
       <p class="image-caption">Lorem ipsum dolor sit amet</p>
 
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
@@ -101,8 +107,14 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
       <div class="dual-image">
-        <div class="image-placeholder" style="aspect-ratio: 3/4;">IMAGEM</div>
-        <div class="image-placeholder" style="aspect-ratio: 3/4;">IMAGEM</div>
+        <div class="image-placeholder" style="aspect-ratio: 3/4;">
+          <span class="image-placeholder__title">Galeria</span>
+          <span>Imagem 1</span>
+        </div>
+        <div class="image-placeholder" style="aspect-ratio: 3/4;">
+          <span class="image-placeholder__title">Galeria</span>
+          <span>Imagem 2</span>
+        </div>
       </div>
       <p class="image-caption">Lorem ipsum dolor sit amet</p>
 
@@ -121,10 +133,13 @@
   <section class="product-cta-section">
     <div class="container">
       <div class="product-cta">
-        <div class="product-cta__image image-placeholder" style="min-height: 280px;">IMAGEM</div>
+        <div class="product-cta__image image-placeholder" style="min-height: 280px;">
+          <span class="image-placeholder__title">Ebook</span>
+          <span>Capa do ebook</span>
+        </div>
         <div class="product-cta__content">
-          <span class="tag">Lorem Ipsum</span>
-          <h2 class="section-title" style="font-size: 1.5rem;">Lorem Ipsum Dolor Sit Amet</h2>
+          <span class="section-label">Ebook</span>
+          <h2 class="section-title" style="font-size: 1.5rem;">Compre o Ebook - Lorem Ipsum</h2>
           <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
           <ul class="product-cta__benefits">
             <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet</li>
@@ -132,8 +147,8 @@
             <li><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet</li>
           </ul>
           <div class="product-cta__buttons">
-            <a href="#" class="btn btn-primary">Lorem Ipsum</a>
-            <a href="#" class="product-cta__link">Lorem Ipsum</a>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Comprar Ebook</a>
+            <a href="#" class="product-cta__link">Saiba Mais</a>
           </div>
         </div>
       </div>
@@ -143,32 +158,41 @@
   <section class="related-posts-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Lorem Ipsum</span>
-        <h2 class="section-title">Lorem Ipsum Dolor Sit Amet</h2>
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Artigos Relacionados</h2>
       </div>
       <div class="related-grid">
         <a href="post.html" class="card blog-card">
-          <div class="blog-card__image image-placeholder">IMAGEM</div>
+          <div class="blog-card__image image-placeholder">
+            <span class="image-placeholder__title">Artigo Relacionado</span>
+            <span>Imagem do artigo</span>
+          </div>
           <div class="blog-card__body">
             <span class="tag blog-card__category">Lorem Ipsum</span>
             <h3 class="blog-card__title">Lorem Ipsum Dolor Sit Amet</h3>
-            <span class="blog-card__link">Lorem Ipsum <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="blog-card__link">Ler Artigo <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
         <a href="post.html" class="card blog-card">
-          <div class="blog-card__image image-placeholder">IMAGEM</div>
+          <div class="blog-card__image image-placeholder">
+            <span class="image-placeholder__title">Artigo Relacionado</span>
+            <span>Imagem do artigo</span>
+          </div>
           <div class="blog-card__body">
             <span class="tag blog-card__category">Lorem Ipsum</span>
             <h3 class="blog-card__title">Lorem Ipsum Dolor Sit Amet</h3>
-            <span class="blog-card__link">Lorem Ipsum <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="blog-card__link">Ler Artigo <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
         <a href="post.html" class="card blog-card">
-          <div class="blog-card__image image-placeholder">IMAGEM</div>
+          <div class="blog-card__image image-placeholder">
+            <span class="image-placeholder__title">Artigo Relacionado</span>
+            <span>Imagem do artigo</span>
+          </div>
           <div class="blog-card__body">
             <span class="tag blog-card__category">Lorem Ipsum</span>
             <h3 class="blog-card__title">Lorem Ipsum Dolor Sit Amet</h3>
-            <span class="blog-card__link">Lorem Ipsum <i class="fa-solid fa-arrow-right"></i></span>
+            <span class="blog-card__link">Ler Artigo <i class="fa-solid fa-arrow-right"></i></span>
           </div>
         </a>
       </div>
@@ -188,7 +212,7 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
             <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
@@ -208,7 +232,7 @@
             <li><a href="#">Instagram</a></li>
             <li><a href="#">YouTube</a></li>
             <li><a href="#">TikTok</a></li>
-            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Telegram</a></li>
             <li><a href="#">WhatsApp</a></li>
           </ul>
         </div>
