@@ -18,11 +18,11 @@
       <nav class="header__nav">
         <a href="index.html" class="active">Inicio</a>
         <a href="#social">Redes</a>
-        <a href="#products">Produtos</a>
+        <a href="produtos.html">Produtos</a>
         <a href="blog.html">Blog</a>
         <a href="#purpose">Sobre</a>
       </nav>
-      <a href="#products" class="btn btn-primary header__cta">Ver Produtos</a>
+      <a href="produtos.html" class="btn btn-primary header__cta">Ver Produtos</a>
       <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Menu">
         <span></span>
         <span></span>
@@ -34,32 +34,146 @@
   <nav class="mobile-nav">
     <a href="index.html" class="active">Inicio</a>
     <a href="#social">Redes</a>
-    <a href="#products">Produtos</a>
+    <a href="produtos.html">Produtos</a>
     <a href="blog.html">Blog</a>
     <a href="#purpose">Sobre</a>
-    <a href="#products" class="btn btn-primary">Ver Produtos</a>
+    <a href="produtos.html" class="btn btn-primary">Ver Produtos</a>
   </nav>
 
   <section class="hero">
-    <div class="container">
-      <div class="hero__content">
-        <span class="section-label">Espiritualidade & Proposito</span>
-        <h1 class="hero__title">Lorem Ipsum Dolor Sit <span>Amet Consectetur</span></h1>
-        <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="hero__buttons">
-          <a href="#products" class="btn btn-primary">Conheca os Produtos</a>
-          <a href="#purpose" class="btn btn-secondary">Nosso Proposito</a>
+    <div class="hero-carousel">
+      <div class="hero-carousel__track">
+        <div class="hero-carousel__slide active">
+          <div class="container">
+            <div class="hero__content">
+              <span class="section-label">Espiritualidade & Proposito</span>
+              <h1 class="hero__title">Lorem Ipsum Dolor Sit <span>Amet Consectetur</span></h1>
+              <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero__buttons">
+                <a href="#products" class="btn btn-primary">Conheca os Produtos</a>
+                <a href="#purpose" class="btn btn-secondary">Nosso Proposito</a>
+              </div>
+              <div class="hero__badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
+                <span class="image-placeholder__title">Hero Principal</span>
+                <span>Imagem de destaque</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hero__badge">
-          <i class="fa-solid fa-circle-check"></i>
-          Lorem ipsum dolor sit amet
+
+        <div class="hero-carousel__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="section-label">Videos & Artigos</span>
+              <h1 class="hero__title">Conteudo Para <span>Transformar Sua Vida</span></h1>
+              <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero__buttons">
+                <a href="blog.html" class="btn btn-primary">Ler Artigos</a>
+                <a href="#social" class="btn btn-secondary">Nosso Canal</a>
+              </div>
+              <div class="hero__badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
+                <span class="image-placeholder__title">Videos & Artigos</span>
+                <span>Imagem de destaque</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-carousel__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="section-label">Produtos Digitais</span>
+              <h1 class="hero__title">E-books & Cursos <span>Para Sua Jornada</span></h1>
+              <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero__buttons">
+                <a href="produtos.html" class="btn btn-primary">Ver Produtos</a>
+                <a href="#purpose" class="btn btn-secondary">Nosso Proposito</a>
+              </div>
+              <div class="hero__badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
+                <span class="image-placeholder__title">Produtos</span>
+                <span>Imagem de destaque</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-carousel__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="section-label">Blog</span>
+              <h1 class="hero__title">Artigos Sobre <span>Espiritualidade</span></h1>
+              <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero__buttons">
+                <a href="blog.html" class="btn btn-primary">Explorar Blog</a>
+                <a href="#products" class="btn btn-secondary">Conheca Produtos</a>
+              </div>
+              <div class="hero__badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
+                <span class="image-placeholder__title">Blog</span>
+                <span>Imagem de destaque</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-carousel__slide">
+          <div class="container">
+            <div class="hero__content">
+              <span class="section-label">Comunidade</span>
+              <h1 class="hero__title">Junte-se a Nossa <span>Comunidade</span></h1>
+              <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="hero__buttons">
+                <a href="#social" class="btn btn-primary">Seguir nas Redes</a>
+                <a href="produtos.html" class="btn btn-secondary">Ver Produtos</a>
+              </div>
+              <div class="hero__badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="hero__image">
+              <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
+                <span class="image-placeholder__title">Comunidade</span>
+                <span>Imagem de destaque</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero__image">
-        <div class="image-placeholder" style="min-height: 400px; aspect-ratio: 4/3;">
-          <span class="image-placeholder__title">Hero Principal</span>
-          <span>Imagem de destaque</span>
+
+      <div class="hero-carousel__controls">
+        <button class="hero-carousel__prev" onclick="heroCarouselNav(-1)" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="hero-carousel__dots">
+          <span class="active" onclick="heroCarouselGo(0)"></span>
+          <span onclick="heroCarouselGo(1)"></span>
+          <span onclick="heroCarouselGo(2)"></span>
+          <span onclick="heroCarouselGo(3)"></span>
+          <span onclick="heroCarouselGo(4)"></span>
         </div>
+        <button class="hero-carousel__next" onclick="heroCarouselNav(1)" aria-label="Proximo"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
@@ -72,36 +186,48 @@
         <p class="section-text" style="margin: 0 auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
       </div>
       <div class="social-grid">
-        <div class="social-card">
-          <div class="social-card__icon"><i class="fa-brands fa-instagram"></i></div>
-          <span class="social-card__name">Instagram</span>
-          <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
-          <span class="social-card__link">Seguir <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <div class="social-card">
+        <a href="#" class="social-card">
           <div class="social-card__icon"><i class="fa-brands fa-youtube"></i></div>
           <span class="social-card__name">YouTube</span>
           <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
           <span class="social-card__link">Inscreva-se <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <div class="social-card">
+        </a>
+        <a href="#" class="social-card">
+          <div class="social-card__icon"><i class="fa-brands fa-instagram"></i></div>
+          <span class="social-card__name">Instagram</span>
+          <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
+          <span class="social-card__link">Seguir <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#" class="social-card">
+          <div class="social-card__icon"><i class="fa-brands fa-facebook"></i></div>
+          <span class="social-card__name">Facebook</span>
+          <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
+          <span class="social-card__link">Seguir <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#" class="social-card">
+          <div class="social-card__icon"><i class="fa-solid fa-store"></i></div>
+          <span class="social-card__name">Hotmart</span>
+          <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
+          <span class="social-card__link">Ver Produtos <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a href="#" class="social-card">
           <div class="social-card__icon"><i class="fa-brands fa-tiktok"></i></div>
           <span class="social-card__name">TikTok</span>
           <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
           <span class="social-card__link">Seguir <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <div class="social-card">
+        </a>
+        <a href="#" class="social-card social-card--hidden">
           <div class="social-card__icon"><i class="fa-brands fa-telegram"></i></div>
           <span class="social-card__name">Telegram</span>
           <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
           <span class="social-card__link">Entrar <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-        <div class="social-card">
+        </a>
+        <a href="#" class="social-card social-card--hidden">
           <div class="social-card__icon"><i class="fa-brands fa-whatsapp"></i></div>
           <span class="social-card__name">WhatsApp</span>
           <span class="social-card__desc">Lorem ipsum dolor sit amet</span>
           <span class="social-card__link">Entrar <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -118,13 +244,13 @@
           <div class="product-card card">
             <div class="product-card__image">
               <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                <span class="image-placeholder__title">Produto 01</span>
-                <span>Imagem do produto</span>
+                <span class="image-placeholder__title">Ebook 01</span>
+                <span>Capa do e-book</span>
               </div>
-              <span class="tag" style="position:absolute;top:12px;left:12px;">Ebook</span>
+              <span class="tag" style="position:absolute;top:12px;left:12px;">E-book</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Produto 01 - Lorem Ipsum</h3>
+              <h3 class="product-card__name">Ebook 01 - Lorem Ipsum</h3>
               <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <span class="product-card__price">R$ 00,00</span>
               <a href="#" class="btn btn-primary product-card__btn">Comprar Agora</a>
@@ -133,13 +259,13 @@
           <div class="product-card card">
             <div class="product-card__image">
               <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                <span class="image-placeholder__title">Produto 02</span>
-                <span>Imagem do produto</span>
+                <span class="image-placeholder__title">Ebook 02</span>
+                <span>Capa do e-book</span>
               </div>
-              <span class="tag" style="position:absolute;top:12px;left:12px;">Curso</span>
+              <span class="tag" style="position:absolute;top:12px;left:12px;">E-book</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Produto 02 - Lorem Ipsum</h3>
+              <h3 class="product-card__name">Ebook 02 - Lorem Ipsum</h3>
               <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <span class="product-card__price">R$ 00,00</span>
               <a href="#" class="btn btn-primary product-card__btn">Comprar Agora</a>
@@ -148,13 +274,13 @@
           <div class="product-card card">
             <div class="product-card__image">
               <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                <span class="image-placeholder__title">Produto 03</span>
-                <span>Imagem do produto</span>
+                <span class="image-placeholder__title">Ebook 03</span>
+                <span>Capa do e-book</span>
               </div>
-              <span class="tag" style="position:absolute;top:12px;left:12px;">Mentoria</span>
+              <span class="tag" style="position:absolute;top:12px;left:12px;">E-book</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Produto 03 - Lorem Ipsum</h3>
+              <h3 class="product-card__name">Ebook 03 - Lorem Ipsum</h3>
               <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <span class="product-card__price">R$ 00,00</span>
               <a href="#" class="btn btn-primary product-card__btn">Comprar Agora</a>
@@ -163,13 +289,13 @@
           <div class="product-card card">
             <div class="product-card__image">
               <div class="image-placeholder" style="aspect-ratio: 4/3;">
-                <span class="image-placeholder__title">Produto 04</span>
-                <span>Imagem do produto</span>
+                <span class="image-placeholder__title">Ebook 04</span>
+                <span>Capa do e-book</span>
               </div>
-              <span class="tag" style="position:absolute;top:12px;left:12px;">Ebook</span>
+              <span class="tag" style="position:absolute;top:12px;left:12px;">E-book</span>
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Produto 04 - Lorem Ipsum</h3>
+              <h3 class="product-card__name">Ebook 04 - Lorem Ipsum</h3>
               <p class="product-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <span class="product-card__price">R$ 00,00</span>
               <a href="#" class="btn btn-primary product-card__btn">Comprar Agora</a>
@@ -186,6 +312,9 @@
           <span></span>
           <span></span>
         </div>
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="produtos.html" class="btn btn-secondary">Ver Todos os Produtos</a>
       </div>
     </div>
   </section>
@@ -302,18 +431,18 @@
           </div>
           <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
           <div class="footer__social">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-solid fa-store"></i></a>
           </div>
         </div>
         <div>
           <h4 class="footer__heading">Links</h4>
           <ul class="footer__links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#products">Produtos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#purpose">Sobre</a></li>
             <li><a href="#">Contato</a></li>
@@ -322,11 +451,11 @@
         <div>
           <h4 class="footer__heading">Redes</h4>
           <ul class="footer__links">
-            <li><a href="#">Instagram</a></li>
             <li><a href="#">YouTube</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
             <li><a href="#">TikTok</a></li>
-            <li><a href="#">Telegram</a></li>
-            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Hotmart</a></li>
           </ul>
         </div>
         <div>
@@ -348,9 +477,39 @@
   </footer>
 
   <script>
+    var heroSlideIndex = 0;
+    var heroSlideCount = document.querySelectorAll('.hero-carousel__slide').length;
+    var heroAutoPlay;
+
+    function heroCarouselGo(index) {
+      var slides = document.querySelectorAll('.hero-carousel__slide');
+      var dots = document.querySelectorAll('.hero-carousel__dots span');
+      slides.forEach(function(s) { s.classList.remove('active'); });
+      dots.forEach(function(d) { d.classList.remove('active'); });
+      heroSlideIndex = index;
+      if (heroSlideIndex >= slides.length) heroSlideIndex = 0;
+      if (heroSlideIndex < 0) heroSlideIndex = slides.length - 1;
+      slides[heroSlideIndex].classList.add('active');
+      dots[heroSlideIndex].classList.add('active');
+      resetHeroAutoPlay();
+    }
+
+    function heroCarouselNav(dir) {
+      heroCarouselGo(heroSlideIndex + dir);
+    }
+
+    function resetHeroAutoPlay() {
+      clearInterval(heroAutoPlay);
+      heroAutoPlay = setInterval(function() {
+        heroCarouselGo(heroSlideIndex + 1);
+      }, 5000);
+    }
+
+    resetHeroAutoPlay();
+
     function scrollCarousel(direction) {
-      const track = document.querySelector('.products-carousel__track');
-      const cardWidth = track.querySelector('.product-card').offsetWidth + 24;
+      var track = document.querySelector('.products-carousel__track');
+      var cardWidth = track.querySelector('.product-card').offsetWidth + 24;
       track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
     }
 

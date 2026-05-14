@@ -18,11 +18,11 @@
       <nav class="header__nav">
         <a href="index.html">Inicio</a>
         <a href="index.html#social">Redes</a>
-        <a href="index.html#products">Produtos</a>
+        <a href="produtos.html">Produtos</a>
         <a href="blog.html" class="active">Blog</a>
         <a href="index.html#purpose">Sobre</a>
       </nav>
-      <a href="index.html#products" class="btn btn-primary header__cta">Ver Produtos</a>
+      <a href="produtos.html" class="btn btn-primary header__cta">Ver Produtos</a>
       <button class="hamburger" onclick="document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Menu">
         <span></span>
         <span></span>
@@ -34,10 +34,10 @@
   <nav class="mobile-nav">
     <a href="index.html">Inicio</a>
     <a href="index.html#social">Redes</a>
-    <a href="index.html#products">Produtos</a>
+    <a href="produtos.html">Produtos</a>
     <a href="blog.html" class="active">Blog</a>
     <a href="index.html#purpose">Sobre</a>
-    <a href="index.html#products" class="btn btn-primary">Ver Produtos</a>
+    <a href="produtos.html" class="btn btn-primary">Ver Produtos</a>
   </nav>
 
   <section class="post-header-section">
@@ -74,15 +74,47 @@
 
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
-      
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <div class="video-embed">
+        <div class="video-embed__wrapper">
+          <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" title="Video do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="image-caption">Assista o video complementar sobre este tema</p>
+      </div>
+
+      <h2>Lorem Ipsum Dolor Sit Amet</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
       <blockquote>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
       </blockquote>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
 
+      <div class="audio-player">
+        <div class="audio-player__header">
+          <i class="fa-solid fa-headphones"></i>
+          <span>Pratica Guiada - Meditacao</span>
+        </div>
+        <audio controls>
+          <source src="audio-pratica.mp3" type="audio/mpeg">
+          Seu navegador nao suporta o elemento de audio.
+        </audio>
+        <p class="audio-player__desc">Ouca a pratica guiada complementar a este artigo.</p>
+      </div>
+
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+      </ul>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
       <div class="image-placeholder" style="aspect-ratio: 16/9;">
         <span class="image-placeholder__title">Imagem do Conteudo</span>
@@ -90,42 +122,10 @@
       </div>
       <p class="image-caption">Lorem ipsum dolor sit amet</p>
 
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-      
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-      </ul>
+      <h2>Quer ir alem?</h2>
+      <p>Se voce chegou ate aqui e quer aprofundar ainda mais os seus conhecimentos sobre este tema, temos um material especial preparado para voce. Nosso e-book foi criado para te guiar passo a passo nessa jornada de transformacao.</p>
 
-      <div class="highlight-box">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </div>
-
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-      <div class="dual-image">
-        <div class="image-placeholder" style="aspect-ratio: 3/4;">
-          <span class="image-placeholder__title">Galeria</span>
-          <span>Imagem 1</span>
-        </div>
-        <div class="image-placeholder" style="aspect-ratio: 3/4;">
-          <span class="image-placeholder__title">Galeria</span>
-          <span>Imagem 2</span>
-        </div>
-      </div>
-      <p class="image-caption">Lorem ipsum dolor sit amet</p>
-
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-
-      <blockquote>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      </blockquote>
+      <p class="post-content__thanks">Obrigado por ler ate aqui! Que sua jornada seja cheia de luz e sabedoria. Namaste.</p>
 
     </div>
   </section>
@@ -209,18 +209,18 @@
           </div>
           <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
           <div class="footer__social">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-solid fa-store"></i></a>
           </div>
         </div>
         <div>
           <h4 class="footer__heading">Links</h4>
           <ul class="footer__links">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#products">Produtos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="index.html#purpose">Sobre</a></li>
             <li><a href="#">Contato</a></li>
@@ -229,11 +229,11 @@
         <div>
           <h4 class="footer__heading">Redes</h4>
           <ul class="footer__links">
-            <li><a href="#">Instagram</a></li>
             <li><a href="#">YouTube</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
             <li><a href="#">TikTok</a></li>
-            <li><a href="#">Telegram</a></li>
-            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Hotmart</a></li>
           </ul>
         </div>
         <div>
