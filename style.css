@@ -1548,21 +1548,17 @@ section {
 .hero-carousel {
   position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow: hidden;
 }
 
 .hero-carousel__track {
   position: relative;
-  flex: 1;
 }
 
 .hero-carousel__slide {
   display: none;
   min-height: 100vh;
-  padding-top: 72px;
-  align-items: center;
+  padding: 72px 0 0;
 }
 
 .hero-carousel__slide.active {
