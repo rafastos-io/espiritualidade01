@@ -118,7 +118,10 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: var(--gold);
+  background: linear-gradient(90deg, #A67C20, #F5E070, #C9A84C, #F0D080, #A67C20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 12px;
 }
 
@@ -358,7 +361,7 @@ section {
 }
 
 .hero__title span {
-  background: linear-gradient(135deg, var(--accent), var(--gold));
+  background: linear-gradient(135deg, var(--accent-light), var(--accent-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -528,7 +531,10 @@ section {
 .product-card__price {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--gold);
+  background: linear-gradient(90deg, #A67C20, #F5E070, #C9A84C, #F0D080, #A67C20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-top: 4px;
 }
 
@@ -1777,7 +1783,10 @@ section {
 .product-feed-item__price {
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--gold);
+  background: linear-gradient(90deg, #A67C20, #F5E070, #C9A84C, #F0D080, #A67C20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .product-feed-item__price--soon {
