@@ -1442,10 +1442,6 @@ section {
     display: none;
   }
 
-  .hero {
-    text-align: center;
-  }
-
   .hero__buttons {
     justify-content: center;
   }
@@ -1544,6 +1540,7 @@ section {
 /* ==================== HERO CAROUSEL ==================== */
 .hero {
   overflow: hidden;
+  padding-top: 72px;
 }
 
 .hero-carousel {
@@ -1557,8 +1554,7 @@ section {
 
 .hero-carousel__slide {
   display: none;
-  min-height: 100vh;
-  padding-top: 72px;
+  min-height: calc(100vh - 72px);
 }
 
 .hero-carousel__slide.active {
@@ -1917,7 +1913,6 @@ section {
 @media (max-width: 768px) {
   .hero-carousel__slide {
     min-height: auto;
-    padding-top: 100px;
     padding-bottom: 80px;
   }
 
