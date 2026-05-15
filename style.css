@@ -71,6 +71,7 @@ img {
 .content-width {
   max-width: var(--content-width);
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 .btn {
@@ -1174,6 +1175,7 @@ section {
 .breadcrumb {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -1460,7 +1462,7 @@ section {
   }
 
   .product-card {
-    flex: 0 0 85%;
+    flex: 0 0 80%;
   }
 
   .purpose-pillars {
@@ -1470,7 +1472,8 @@ section {
   .blog-grid,
   .posts-grid,
   .related-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .featured-post__content {
@@ -1482,7 +1485,7 @@ section {
   }
 
   .footer__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
 
@@ -1515,9 +1518,21 @@ section {
     flex-direction: column;
     align-items: center;
   }
+
+  .products-feed {
+    gap: 24px;
+  }
+
+  .mobile-nav a {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
+  section {
+    padding: 40px 0;
+  }
+
   .social-grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
@@ -1531,13 +1546,78 @@ section {
     padding-top: 120px;
   }
 
+  .products-hero {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
   .container {
+    padding: 0 16px;
+  }
+
+  .content-width {
     padding: 0 16px;
   }
 
   .btn {
     padding: 12px 24px;
     font-size: 0.9rem;
+  }
+
+  .blog-grid,
+  .posts-grid,
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  .products-feed {
+    gap: 16px;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 16px 20px;
+    gap: 12px;
+  }
+
+  .faq-answer {
+    padding: 0 20px;
+  }
+
+  .faq-item.open .faq-answer {
+    padding: 0 20px 16px;
+  }
+
+  .post-inline-cta {
+    padding: 18px 20px;
+    gap: 16px;
+  }
+
+  .post-content blockquote {
+    padding: 18px 20px;
+  }
+
+  .category-chip,
+  .products-category-chip {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .search-box input {
+    padding: 12px 20px 12px 44px;
+    font-size: 0.9rem;
+  }
+
+  .purpose-quote {
+    padding: 18px 20px;
   }
 }
 
@@ -2040,11 +2120,13 @@ section {
 @media (max-width: 768px) {
   .hero-carousel__slide {
     min-height: auto;
-    padding-bottom: 80px;
+    padding: 48px 0 72px;
   }
 
   .hero-carousel__slide .container {
     min-height: auto;
+    gap: 32px;
+    text-align: center;
   }
 
   .hero-carousel {
