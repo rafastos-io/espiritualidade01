@@ -57,6 +57,12 @@
         <button class="products-category-chip" data-category="meditacao">Meditação Guiada</button>
         <button class="products-category-chip" data-category="outros">Outros</button>
       </div>
+      <div class="products-subcategories-list" id="subcategoriesBar" style="display:none;">
+        <span class="products-subcategories-label">Filtrar por tema:</span>
+        <button class="products-subcategory-chip active" data-subcategory="all">Todos</button>
+        <button class="products-subcategory-chip" data-subcategory="tema1">Tema 01</button>
+        <button class="products-subcategory-chip" data-subcategory="tema2">Tema 02</button>
+      </div>
     </div>
   </section>
 
@@ -64,7 +70,7 @@
     <div class="container">
       <div class="products-feed">
 
-        <div class="product-feed-item" data-category="ebooks">
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema1">
           <div class="product-feed-item__cover">
             <div class="image-placeholder" style="aspect-ratio: 3/4;">
               <span class="image-placeholder__title">Ebook 01</span>
@@ -82,7 +88,7 @@
           </div>
         </div>
 
-        <div class="product-feed-item" data-category="ebooks">
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema1">
           <div class="product-feed-item__cover">
             <div class="image-placeholder" style="aspect-ratio: 3/4;">
               <span class="image-placeholder__title">Ebook 02</span>
@@ -100,7 +106,7 @@
           </div>
         </div>
 
-        <div class="product-feed-item" data-category="ebooks">
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema1">
           <div class="product-feed-item__cover">
             <div class="image-placeholder" style="aspect-ratio: 3/4;">
               <span class="image-placeholder__title">Ebook 03</span>
@@ -118,7 +124,7 @@
           </div>
         </div>
 
-        <div class="product-feed-item" data-category="ebooks">
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema2">
           <div class="product-feed-item__cover">
             <div class="image-placeholder" style="aspect-ratio: 3/4;">
               <span class="image-placeholder__title">Ebook 04</span>
@@ -136,7 +142,7 @@
           </div>
         </div>
 
-        <div class="product-feed-item" data-category="ebooks">
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema2">
           <div class="product-feed-item__cover">
             <div class="image-placeholder" style="aspect-ratio: 3/4;">
               <span class="image-placeholder__title">Ebook 05</span>
@@ -151,6 +157,24 @@
             <div class="product-feed-item__price-row">
               <span class="product-feed-item__price product-feed-item__price--soon">Em breve</span>
               <a href="#" class="btn btn-secondary product-feed-item__btn" style="pointer-events:none; opacity:0.5;">Em breve</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-feed-item" data-category="ebooks" data-subcategory="tema2">
+          <div class="product-feed-item__cover">
+            <div class="image-placeholder" style="aspect-ratio: 3/4;">
+              <span class="image-placeholder__title">Ebook 06</span>
+              <span>Capa do e-book</span>
+            </div>
+            <span class="tag product-feed-item__tag">E-book</span>
+          </div>
+          <div class="product-feed-item__info">
+            <h3 class="product-feed-item__name">Ebook 06 - Lorem Ipsum</h3>
+            <p class="product-feed-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="product-feed-item__price-row">
+              <span class="product-feed-item__price">R$ 00,00</span>
+              <a href="#" class="btn btn-primary product-feed-item__btn"><i class="fa-solid fa-cart-shopping"></i> Comprar Agora</a>
             </div>
           </div>
         </div>
@@ -304,7 +328,7 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-solid fa-store"></i></a>
+            <a href="#"><i class="fa-brands fa-spotify"></i></a>
           </div>
         </div>
         <div>
@@ -324,7 +348,7 @@
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">TikTok</a></li>
-            <li><a href="#">Hotmart</a></li>
+            <li><a href="#">Spotify</a></li>
           </ul>
         </div>
         <div>
@@ -364,18 +388,46 @@
       if (!isOpen) item.classList.add('open');
     }
 
+    var currentCategory = 'all';
+    var currentSubcategory = 'all';
+
+    function filterProducts() {
+      document.querySelectorAll('.product-feed-item').forEach(function(item) {
+        var cat = item.getAttribute('data-category');
+        var sub = item.getAttribute('data-subcategory');
+        var showByCat = currentCategory === 'all' || cat === currentCategory;
+        var showBySub = currentSubcategory === 'all' || !sub || sub === currentSubcategory;
+        item.style.display = (showByCat && showBySub) ? '' : 'none';
+      });
+    }
+
+    var subBar = document.getElementById('subcategoriesBar');
+
     document.querySelectorAll('.products-category-chip').forEach(function(chip) {
       chip.addEventListener('click', function() {
         document.querySelectorAll('.products-category-chip').forEach(function(c) { c.classList.remove('active'); });
         this.classList.add('active');
-        var category = this.getAttribute('data-category');
-        document.querySelectorAll('.product-feed-item').forEach(function(item) {
-          if (category === 'all' || item.getAttribute('data-category') === category) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
-        });
+        currentCategory = this.getAttribute('data-category');
+        currentSubcategory = 'all';
+
+        if (currentCategory === 'ebooks') {
+          subBar.style.display = '';
+          document.querySelectorAll('.products-subcategory-chip').forEach(function(s) { s.classList.remove('active'); });
+          document.querySelector('.products-subcategory-chip[data-subcategory="all"]').classList.add('active');
+        } else {
+          subBar.style.display = 'none';
+        }
+
+        filterProducts();
+      });
+    });
+
+    document.querySelectorAll('.products-subcategory-chip').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        document.querySelectorAll('.products-subcategory-chip').forEach(function(s) { s.classList.remove('active'); });
+        this.classList.add('active');
+        currentSubcategory = this.getAttribute('data-subcategory');
+        filterProducts();
       });
     });
   </script>
